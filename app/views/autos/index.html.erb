@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Autos</h1>
+
+<div id="autos">
+<table class="table table-striped">
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Model Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">User</th>
+    </tr>
+  </thead>
+  </table>
+  <% @autos.each do |auto| %>
+    <%= render auto %>
+    <p>
+     
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New auto", new_auto_path, class:"btn btn-secondary" %>

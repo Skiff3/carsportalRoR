@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @auto %>
+
+<div>
+  <%= link_to "Edit this auto", edit_auto_path(@auto),class:"btn btn-secondary"  %> |
+  <%= link_to "Back to autos", autos_path , class:"btn btn-secondary" %><br/>
+
+  <%= button_to "Destroy this auto", @auto, method: :delete %>
+</div>
